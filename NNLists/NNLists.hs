@@ -11,3 +11,10 @@ myButLast :: [a] -> a
 myButLast [] = error "Error"
 myButLast [a] = error "Error"
 myButLast theList = genericIndex theList $ (length theList) - 2
+
+elementAt :: [a] -> Int -> a
+elementAt [] _ = error "Error"
+elementAt _ 0 = error "Error"
+elementAt [a] 1 = a
+elementAt list index = list !! (index - 1)
+
