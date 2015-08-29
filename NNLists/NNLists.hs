@@ -22,3 +22,7 @@ myLength :: [a] -> Int
 myLength [] = 0
 myLength [a] = 1
 myLength list = 1 + myLength (tail list)
+
+myReverse :: [a] -> [a]
+myReverse [a] = [a]
+myReverse (x:xs) = myReverse xs ++ [x]
