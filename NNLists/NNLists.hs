@@ -18,3 +18,7 @@ elementAt _ 0 = error "Error"
 elementAt [a] 1 = a
 elementAt list index = list !! (index - 1)
 
+myLength :: [a] -> Int
+myLength [] = 0
+myLength [a] = 1
+myLength list = 1 + myLength (tail list)
