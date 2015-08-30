@@ -26,3 +26,10 @@ myLength (x:xs) = 1 + myLength xs
 myReverse :: [a] -> [a]
 myReverse [a] = [a]
 myReverse (x:xs) = myReverse xs ++ [x]
+
+isPalyndrome :: (Eq a) => [a] -> Bool
+isPalyndrome [] = True
+isPalyndrome [_] = True
+isPalyndrome list = list == (myReverse list)
+isPalyndrome list = (head list) == (last list) && isPalyndrome (tail list)
+
