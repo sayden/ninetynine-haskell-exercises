@@ -45,9 +45,13 @@ myCompress list = map head $ group list
 pack :: (Eq a) => [a] -> [[a]]
 pack [] = []
 pack (first:list) = let (processed,rest) = span (\a -> a == first) list
-               in (first:processed) : pack rest
+                    in (first:processed) : pack rest
 
---encode :: [a] -> [(Int, a)]
---encode [] = []
---encode [a] = [(1, a)]
---encode list = (pack list)
+encode :: (Eq a) => [a] -> [(Int, a)]
+encode [] = []
+encode [a] = [(1, a)]
+encode list = map simplePack result
+            where
+                result = pack list
+                simplePack xs = (length xs, head xs)
+
