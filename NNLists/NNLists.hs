@@ -39,3 +39,10 @@ myFlatten :: NestedList a -> [a]
 myFlatten (Elem elem) = [elem]
 myFlatten (List elem) = concatMap myFlatten elem
 
+myCompress :: (Eq a) => [a] -> [a]
+myCompress list = map head $ group list
+
+pack :: (Eq a) => [a] -> [[a]]
+pack [] = []
+pack (first:list) = let (processed,rest) = span (\x -> x == x) list
+                    in (first:processed) : pack rest
