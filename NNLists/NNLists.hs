@@ -28,10 +28,10 @@ myReverse [a] = [a]
 myReverse (x:xs) = myReverse xs ++ [x]
 
 isPalyndrome :: (Eq a) => [a] -> Bool
-isPalyndrome [] = True
-isPalyndrome [_] = True
 isPalyndrome list = list == (myReverse list)
-isPalyndrome list = (head list) == (last list) && isPalyndrome (tail list)
+isPalyndrome' [] = True
+isPalyndrome' [_] = True
+isPalyndrome' list = (head list) == (last list) && isPalyndrome (tail list)
 
 data NestedList a = Elem a | List [NestedList a]
 
@@ -44,5 +44,10 @@ myCompress list = map head $ group list
 
 pack :: (Eq a) => [a] -> [[a]]
 pack [] = []
-pack (first:list) = let (processed,rest) = span (\x -> x == x) list
-                    in (first:processed) : pack rest
+pack (first:list) = let (processed,rest) = span (\a -> a == first) list
+               in (first:processed) : pack rest
+
+--encode :: [a] -> [(Int, a)]
+--encode [] = []
+--encode [a] = [(1, a)]
+--encode list = (pack list)
