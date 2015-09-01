@@ -1,22 +1,22 @@
 # ninetynine-haskell-exercises
 The 99 exercises from https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problems
  
-* Problem 01 (Solved)
-* Problem 02 (Solved)
-* Problem 03 (Solved)
-* Problem 04 (Solved)
-* Problem 05 (Solved)
-* Problem 06 (Solved)
-* Problem 07 (Solved with help)
-* Problem 08 (Solved)
-* Problem 09 (Solved)
-* Problem 10 (Solved)
-* Problem 11 (Solved)
-* Problem 12 (Solved)
-* Problem 13 (In progress)
-* Problem 14
-* Problem 15
-* Problem 16
+* Problem 01: (Solved) Find last element
+* Problem 02: (Solved) Last element but one
+* Problem 03: (Solved) Find the K'th element
+* Problem 04: (Solved) Find the number of elements
+* Problem 05: (Solved) Reverse a list
+* Problem 06: (Solved) Finds if a list is palyndrome
+* Problem 07: (Solved with help) Flatten a nested list
+* Problem 08: (Solved) Eliminate consecutive duplicates
+* Problem 09: (Solved) Pack consecutive duplicates into sublists
+* Problem 10: (Solved) Encode
+* Problem 11: (Solved) Modified Encoding
+* Problem 12: (Solved) Decode
+* Problem 13: (Solved in 11 already as I didn't use P10) Decode direct-approach
+* Problem 14: (Solved) Duplicate list
+* Problem 15: (Solved) Replicate the elements of a list a given number of times.
+* Problem 16: (In progress) Drop every N'th element from a list.
 * Problem 17
 * Problem 18
 * Problem 19

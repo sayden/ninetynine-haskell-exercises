@@ -3,7 +3,7 @@ module NNLists.NNListsContinued where
 import Data.List
 import NNLists.NNLists
 
---11 Modified run length encoding
+--11-13 Modified run length encoding
 data RunLength a = Single a | Comp (Int, a)
     deriving (Show)
 
@@ -28,3 +28,14 @@ decodeModified a = concatMap unpack a
                 where
                     unpack (Single a) = [a]
                     unpack (Comp (n, a)) = replicate n a
+
+--14 Duplicate elements in list
+dupli :: [a] -> [a]
+dupli list = concatMap (\x -> x:x:[]) list
+
+
+--15 Replicate the elements of a list a given number of times
+repli :: Int -> [a] -> [a]
+repli n list = concatMap (replicate n) list
+
+--16 Drop every N'th element from a list.
