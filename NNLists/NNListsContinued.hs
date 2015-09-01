@@ -1,4 +1,4 @@
-module ListsContinued where
+module NNLists.NNListsContinued where
 
 import Data.List
 import NNLists.NNLists
@@ -23,3 +23,8 @@ modifiedEncodedPatternMatching xs = map complexPack $ encode xs
                             complexPack (n,a) = Comp(n,a)
 
 --12
+decodeModified :: [RunLength a] -> [a]
+decodeModified a = concatMap unpack a
+                where
+                    unpack (Single a) = [a]
+                    unpack (Comp (n, a)) = replicate n a

@@ -1,4 +1,4 @@
-module NNLists where
+module NNLists.NNLists where
 
 import Data.List
 

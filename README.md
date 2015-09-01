@@ -12,8 +12,8 @@ The 99 exercises from https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problem
 * Problem 09 (Solved)
 * Problem 10 (Solved)
 * Problem 11 (Solved)
-* Problem 12 (In progress)
-* Problem 13
+* Problem 12 (Solved)
+* Problem 13 (In progress)
 * Problem 14
 * Problem 15
 * Problem 16
