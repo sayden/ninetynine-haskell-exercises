@@ -33,3 +33,9 @@ isPalyndrome [_] = True
 isPalyndrome list = list == (myReverse list)
 isPalyndrome list = (head list) == (last list) && isPalyndrome (tail list)
 
+data NestedList a = Elem a | List [NestedList a]
+
+myFlatten :: NestedList a -> [a]
+myFlatten (Elem elem) = [elem]
+myFlatten (List elem) = concatMap myFlatten elem
+
