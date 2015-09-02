@@ -39,3 +39,8 @@ repli :: Int -> [a] -> [a]
 repli n list = concatMap (replicate n) list
 
 --16 Drop every N'th element from a list.
+myDrop :: Int -> [a] -> [a]
+myDrop _ [] = []
+myDrop i xs = concat $ (take (i-1) xs) : (myDrop i (drop i xs)) : []
+
+--17

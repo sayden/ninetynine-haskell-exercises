@@ -16,9 +16,9 @@ The 99 exercises from https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problem
 * Problem 13: (Solved in 11 already as I didn't use P10) Decode direct-approach
 * Problem 14: (Solved) Duplicate list
 * Problem 15: (Solved) Replicate the elements of a list a given number of times.
-* Problem 16: (In progress) Drop every N'th element from a list.
-* Problem 17
-* Problem 18
+* Problem 16: (Solved with a little hangover) Drop every N'th element from a list
+* Problem 17: (In progress)
+* Problem 18:
 * Problem 19
 * Problem 20
 * Problem 21
