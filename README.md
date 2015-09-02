@@ -17,13 +17,13 @@ The 99 exercises from https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problem
 * Problem 14: (Solved) Duplicate list
 * Problem 15: (Solved) Replicate the elements of a list a given number of times.
 * Problem 16: (Solved with a little hangover) Drop every N'th element from a list
-* Problem 17: (In progress)
-* Problem 18:
-* Problem 19
-* Problem 20
-* Problem 21
-* Problem 22
-* Problem 23
+* Problem 17: (Solved) Split a list into two parts; length is given
+* Problem 18: (Solved) Extract a slice from a list
+* Problem 19: (Solved) Rotate a list N places to the left.
+* Problem 20: (Solved) Remove the K'th element from a list.
+* Problem 21: (Solved) Insert an element at a given position into a list
+* Problem 22: (Solved) Create a list containing all integers within a given range.
+* Problem 23: () Extract a given number of randomly selected elements from a list.
 * Problem 24
 * Problem 25
 * Problem 26

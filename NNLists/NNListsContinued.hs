@@ -43,4 +43,24 @@ myDrop :: Int -> [a] -> [a]
 myDrop _ [] = []
 myDrop i xs = concat $ (take (i-1) xs) : (myDrop i (drop i xs)) : []
 
---17
+--17 Split a list into two parts; the length of the first part is given
+mySplit :: Int -> [a] -> [[a]]
+mySplit i xs = (take i xs) : (drop i xs) : []
+
+--18 Extract a slice from a list.
+slice :: Int -> Int -> [a] -> [a]
+slice s f xs = take (f-s+1) (drop (s-1) xs)
+
+--19 Rotate a list N places to the left.
+rotate :: Int -> [a] -> [a]
+rotate _ [] = []
+rotate i xs = concat $ (drop i xs) : take i xs : []
+
+--20 Remove the K'th element from a list.
+removeAt :: Int -> [a] -> [[a]]
+removeAt _ [] = []
+removeAt i xs = removed : concat (startRest : lastRest : [] ): []
+            where
+                removed = (slice i i xs)
+                startRest = take (i-1) xs
+                lastRest = drop i xs
