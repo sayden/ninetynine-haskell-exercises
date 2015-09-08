@@ -38,10 +38,18 @@ combinations n list = do y:xs <- tails list
                          ys <- combinations (n-1) xs
                          return (y:ys)
 
---fullCombinations :: Int -> [a] -> [[a]]
---fullCombinations 0 _ = [[]]
---fullCombinations n x:list =
+--27 Group the elements of a set into disjoint subsets.
 
-test :: Int -> [a] -> [[a]]
-test 0 _ = [[]]
-test n (a:b) = map (\x -> a:x:[]) b ++ test (n-1) b
+--28 a) Sorting a list of lists according to length of sublists
+lsort :: Ord a => [[a]] -> [[a]]
+lsort list = sortBy (\a b -> compare (length a) (length b)) list
+
+-- b) sort the elements of this list according to their length frequency
+--lSortFreq :: Ord a => [[a]] -> [ListLength]
+--map (\(_,b) -> b) lastList
+lSortFreq list = map (\(_,a) -> a) sorted
+    where
+        counted = map (\x -> ((length x), x)) list
+        lastList = sortBy (\(a,_) (b,_)-> compare b a) counted
+        grouped = groupBy (\(a,_) (b,_) -> a==b) lastList
+        sorted = concat $ sortBy (\x y -> compare (length x) (length y)) grouped

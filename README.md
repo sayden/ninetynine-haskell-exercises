@@ -27,9 +27,9 @@ The 99 exercises from https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problem
 * Problem 24: (Solved) Draw N different random numbers from the set 1..M.
 * Problem 25: (Solved) Generate a random permutation of the elements of a list.
 * Problem 26: (Solved with help) Generate the combinations of K distinct objects chosen from the N elements of a list
-* Problem 27
-* Problem 28
-* Problem 29
+* Problem 27: (Left for later)
+* Problem 28: (Solved) Sorting a list of lists according to length of sublists and of their frequency
+* Problem 29: 
 * Problem 30
 * Problem 31
 * Problem 32
