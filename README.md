@@ -23,10 +23,10 @@ The 99 exercises from https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problem
 * Problem 20: (Solved) Remove the K'th element from a list.
 * Problem 21: (Solved) Insert an element at a given position into a list
 * Problem 22: (Solved) Create a list containing all integers within a given range.
-* Problem 23: () Extract a given number of randomly selected elements from a list.
-* Problem 24
-* Problem 25
-* Problem 26
+* Problem 23: (Solved with help) Extract a given number of randomly selected elements from a list.
+* Problem 24: (Solved) Draw N different random numbers from the set 1..M.
+* Problem 25: (Solved) Generate a random permutation of the elements of a list.
+* Problem 26: (Solved with help) Generate the combinations of K distinct objects chosen from the N elements of a list
 * Problem 27
 * Problem 28
 * Problem 29

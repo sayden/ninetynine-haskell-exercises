@@ -65,3 +65,4 @@ encode list = map simplePack result
                 result = group list
                 simplePack xs = (length xs, head xs)
 
+
