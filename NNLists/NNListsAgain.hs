@@ -40,13 +40,13 @@ combinations n list = do y:xs <- tails list
 
 --27 Group the elements of a set into disjoint subsets.
 
+
 --28 a) Sorting a list of lists according to length of sublists
 lsort :: Ord a => [[a]] -> [[a]]
 lsort list = sortBy (\a b -> compare (length a) (length b)) list
 
 -- b) sort the elements of this list according to their length frequency
---lSortFreq :: Ord a => [[a]] -> [ListLength]
---map (\(_,b) -> b) lastList
+lSortFreq :: [[a]] -> [[a]]
 lSortFreq list = map (\(_,a) -> a) sorted
     where
         counted = map (\x -> ((length x), x)) list
