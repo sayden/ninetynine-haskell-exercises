@@ -52,9 +52,17 @@ primeFactors :: Integral a => a -> [a]
 primeFactors d = primeFactors' 1 d
 
 -- 36 Determine the prime factors of a given number and their multiplicity
+primeFactorsMult :: Integral a => a -> [(a, Int)]
 primeFactorsMult a = result
     where
         factors = primeFactors a
         sorted = sort factors
         grouped = group sorted
         result = map (\x -> ((head x), (length x))) grouped
+
+-- 37
+phi a = foldl (*) 1 res
+    where
+    primeF = primeFactorsMult a
+    totienMult p m = (p - 1) * p ** (m - 1)
+    res = map (\x -> totienMult (fromIntegral (fst x)) (fromIntegral (snd x))) primeF
