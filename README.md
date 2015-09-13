@@ -35,8 +35,8 @@ The 99 exercises from https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problem
 * Problem 32: (Solved) Determine the greatest common divisor of two positive integer numbers. Use Euclid's algorithm.
 * Problem 33: (Solved) Determine whether two positive integer numbers are coprime
 * Problem 34: (Solved) Calculate Euler's totient function phi(m).
-* Problem 35: (In progress)
-* Problem 36
+* Problem 35: (Solved, probably not the best way but it was becoming a pain) Prime factors of a given positive integer
+* Problem 36: 
 * Problem 37
 * Problem 38
 * Problem 39
