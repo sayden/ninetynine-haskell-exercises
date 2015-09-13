@@ -36,7 +36,7 @@ The 99 exercises from https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problem
 * Problem 33: (Solved) Determine whether two positive integer numbers are coprime
 * Problem 34: (Solved) Calculate Euler's totient function phi(m).
 * Problem 35: (Solved, probably not the best way but it was becoming a pain) Prime factors of a given number
-* Problem 36:
+* Problem 36: (Solved) Determine the prime factors of a given number and their multiplicity
 * Problem 37
 * Problem 38
 * Problem 39

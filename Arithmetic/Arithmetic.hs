@@ -51,7 +51,7 @@ primeFactors' d r = [divisor] ++ result
 primeFactors :: Integral a => a -> [a]
 primeFactors d = primeFactors' 1 d
 
--- 36 Determine the prime factors of a given positive integer.
+-- 36 Determine the prime factors of a given number and their multiplicity
 primeFactorsMult a = result
     where
         factors = primeFactors a
