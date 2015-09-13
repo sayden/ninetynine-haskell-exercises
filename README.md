@@ -27,15 +27,15 @@ The 99 exercises from https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problem
 * Problem 24: (Solved) Draw N different random numbers from the set 1..M.
 * Problem 25: (Solved) Generate a random permutation of the elements of a list.
 * Problem 26: (Solved with help) Generate the combinations of K distinct objects chosen from the N elements of a list
-* Problem 27: (Left for later)
+* Problem 27: (Solved) Sorting a list of lists according to length of sublists
 * Problem 28: (Solved) Sorting a list of lists according to length of sublists and of their frequency
-* Problem 29: 
-* Problem 30
-* Problem 31
-* Problem 32
-* Problem 33
-* Problem 34
-* Problem 35
+* Problem 29: (Doesn't exists?)
+* Problem 30: (Doesn't exists?)
+* Problem 31: (Solved) Determine whether a given integer number is prime.
+* Problem 32: (Solved) Determine the greatest common divisor of two positive integer numbers. Use Euclid's algorithm.
+* Problem 33: (Solved) Determine whether two positive integer numbers are coprime
+* Problem 34: (Solved) Calculate Euler's totient function phi(m).
+* Problem 35: (In progress)
 * Problem 36
 * Problem 37
 * Problem 38
