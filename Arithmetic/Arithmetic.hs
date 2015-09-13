@@ -51,4 +51,10 @@ primeFactors' d r = [divisor] ++ result
 primeFactors :: Integral a => a -> [a]
 primeFactors d = primeFactors' 1 d
 
--- 36
+-- 36 Determine the prime factors of a given positive integer.
+primeFactorsMult a = result
+    where
+        factors = primeFactors a
+        sorted = sort factors
+        grouped = group sorted
+        result = map (\x -> ((head x), (length x))) grouped
