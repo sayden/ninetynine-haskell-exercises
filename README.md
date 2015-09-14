@@ -47,7 +47,7 @@ The 99 exercises from https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problem
 * Problem 44: (Doesn't exists?)
 * Problem 45: (Doesn't exists?)
 * Problem 46: (Solved) Define predicates and/2, or/2, nand/2, nor/2, xor/2, impl/2 and equ/2
-* Problem 47: 
+* Problem 47: (Solved with help) Truth tables for logical expression 2
 * Problem 48
 * Problem 49
 * Problem 50

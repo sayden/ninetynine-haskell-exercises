@@ -32,3 +32,13 @@ impl' a b = (not' a) `or'` b
 
 equ' :: Bool -> Bool -> Bool
 equ' a b = a == b
+
+table :: (Bool -> Bool -> Bool) -> IO ()
+table f = mapM_ putStrLn [show a ++ " " ++ show b ++ " " ++ show (f a b ) | a <- [True, False], b<- [True, False]]
+
+-- 42 Truth tables for logical expression 2
+infixl 1 `not'`
+infixl 2 `equ'`
+infixl 3 `and'`
+infixl 4 `xor'`
+infixl 5 `or'`
