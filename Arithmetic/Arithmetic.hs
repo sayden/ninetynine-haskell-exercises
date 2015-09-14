@@ -14,7 +14,7 @@ isPrime :: Int -> Bool
 isPrime x = length result == 1
     where
         squarer = round $ sqrt (fromIntegral x)
-        candidates = takeWhile (<squarer) [1..x-1]
+        candidates = takeWhile (<=squarer) [1..x-1]
         divisors' = filter (\a -> (mod x a) == 0) candidates
         result = take 2 $ divisors'
 
@@ -60,13 +60,29 @@ primeFactorsMult a = result
         grouped = group sorted
         result = map (\x -> ((head x), (length x))) grouped
 
--- 37
+-- 37 Calculate Euler's totient function phi(m) (improved).
 phi a = foldl (*) 1 res
     where
     primeF = primeFactorsMult a
     totienMult p m = (p - 1) * p ** (m - 1)
     res = map (\x -> totienMult (fromIntegral (fst x)) (fromIntegral (snd x))) primeF
 
--- 38
-primesR :: [Int] -> [Int]
-primesR list = filter (isPrime) list
+-- 39 A List of primes numbers
+primesR :: Int -> Int -> [Int]
+primesR x y = filter (isPrime) [x..y]
+
+-- 40 Goldbach's conjecture.
+goldbach :: Int -> [(Int, Int)]
+goldbach x = result
+    where
+        primesList = primesR 2 (x-1)
+        candidates = map (\a -> (a, x - a)) primesList
+        result' = filter (\(x,y) -> isPrime x && isPrime y ) candidates
+        ordered = map (\(x,y) -> if x>y then (x,y) else (y,x)) result'
+        sorted = sort ordered
+        grouped = group sorted
+        result = map (head) grouped
+
+-- 41 Given a range of ints, print a list of all even numbers and their Goldbach composition.
+goldbachList :: Int -> Int -> [[(Int, Int)]]
+goldbachList x y = map goldbach $ filter even [x..y]

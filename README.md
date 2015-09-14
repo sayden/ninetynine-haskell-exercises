@@ -39,9 +39,9 @@ The 99 exercises from https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problem
 * Problem 36: (Solved) Determine the prime factors of a given number and their multiplicity
 * Problem 37: (Solved) Calculate Euler's totient function phi(m) (improved)
 * Problem 38: (Not a problem)
-* Problem 39: 
-* Problem 40
-* Problem 41
+* Problem 39: (Solved) A list of prime numbers
+* Problem 40: (Solved) Goldbach conjeture
+* Problem 41: (Solved)Given a range of ints, print a list of all even numbers and their Goldbach composition.
 * Problem 42
 * Problem 43
 * Problem 44
