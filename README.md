@@ -42,12 +42,12 @@ The 99 exercises from https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problem
 * Problem 39: (Solved) A list of prime numbers
 * Problem 40: (Solved) Goldbach conjeture
 * Problem 41: (Solved)Given a range of ints, print a list of all even numbers and their Goldbach composition.
-* Problem 42
-* Problem 43
-* Problem 44
-* Problem 45
-* Problem 46
-* Problem 47
+* Problem 42: (Doesn't exists?)
+* Problem 43: (Doesn't exists?)
+* Problem 44: (Doesn't exists?)
+* Problem 45: (Doesn't exists?)
+* Problem 46: (Solved) Define predicates and/2, or/2, nand/2, nor/2, xor/2, impl/2 and equ/2
+* Problem 47: 
 * Problem 48
 * Problem 49
 * Problem 50
