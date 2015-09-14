@@ -11,12 +11,12 @@ divisors x = divisors' ++ [x]
         divisors' = filter (\a -> (mod x a) == 0) candidates
 
 isPrime :: Int -> Bool
-isPrime x = length divisors' == 2
+isPrime x = length result == 1
     where
         squarer = round $ sqrt (fromIntegral x)
         candidates = takeWhile (<squarer) [1..x-1]
-        divisors = filter (\a -> (mod x a) == 0) candidates
-        divisors' = take 2 $ divisors
+        divisors' = filter (\a -> (mod x a) == 0) candidates
+        result = take 2 $ divisors'
 
 
 -- 32 Determine the greatest common divisor of two positive integer numbers. Use Euclid's algorithm.
@@ -66,3 +66,7 @@ phi a = foldl (*) 1 res
     primeF = primeFactorsMult a
     totienMult p m = (p - 1) * p ** (m - 1)
     res = map (\x -> totienMult (fromIntegral (fst x)) (fromIntegral (snd x))) primeF
+
+-- 38
+primesR :: [Int] -> [Int]
+primesR list = filter (isPrime) list
