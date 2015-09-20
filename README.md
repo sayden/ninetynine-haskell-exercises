@@ -49,8 +49,8 @@ The 99 exercises from https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problem
 * Problem 46: (Solved) Define predicates and/2, or/2, nand/2, nor/2, xor/2, impl/2 and equ/2
 * Problem 47: (Solved with help) Truth tables for logical expression 2
 * Problem 48: (Solved) Truth tables for logical expressions (3).
-* Problem 49:
-* Problem 50
+* Problem 49: (Solved with help) Problem with grey codes
+* Problem 50: (In progress)
 * Problem 51
 * Problem 52
 * Problem 53

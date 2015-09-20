@@ -46,8 +46,15 @@ infixl 6 `nand'`
 infixl 3 `equ'`
 
 -- 48 Truth tables for logical expressions (3).
-
 genTable :: Int -> ([Bool] -> Bool) -> IO ()
 genTable n f = mapM_ putStrLn [toStr a ++ " => " ++ show (f a) | a <- replicateM n [True, False]]
     where
         toStr = unwords . map (\x -> show x ++ " ")
+
+-- 49 Problem with grey codes
+gray :: Int -> [String]
+gray 0 = [""]
+gray n = ['0' : a | a <- prev] ++ ['1' : a | a <- prev]
+    where
+        prev = gray (n-1)
+
