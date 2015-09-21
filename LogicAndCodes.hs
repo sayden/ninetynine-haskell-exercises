@@ -1,6 +1,9 @@
 module LogicAndCodes where
 
 import Control.Monad (replicateM)
+import Data.List
+import Data.Tree
+import Data.Ord (comparing)
 
 -- 46 Define predicates and/2, or/2, nand/2, nor/2, xor/2, impl/2 and equ/2
 and' :: Bool -> Bool -> Bool
@@ -58,3 +61,18 @@ gray n = ['0' : a | a <- prev] ++ ['1' : a | a <- prev]
     where
         prev = gray (n-1)
 
+-- 50 Huffman codes
+data Htree a = Leaf a | Branch (Htree a) (Htree a)
+    deriving Show
+
+
+huffman list = serialize $ htree hTreeSorted
+    where
+        orSorted = sortBy (comparing snd) list
+        hTreeSorted = [(y, Leaf x) | (x,y) <- orSorted]
+        htree [(_, x)] = x
+        htree ((n1,l1):(n2,l2):xs) = htree $ insertBy (comparing fst) (n1+n2, Branch l1 l2) xs
+        serialize (Branch l r) =
+                        [(x, '0':code) | (x, code) <- serialize l] ++
+                        [(x, '1':code) | (x, code) <- serialize r]
+        serialize (Leaf x) = [(x, "")]

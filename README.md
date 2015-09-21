@@ -41,7 +41,7 @@ The 99 exercises from https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problem
 * Problem 38: (Not a problem)
 * Problem 39: (Solved) A list of prime numbers
 * Problem 40: (Solved) Goldbach conjeture
-* Problem 41: (Solved)Given a range of ints, print a list of all even numbers and their Goldbach composition.
+* Problem 41: (Solved) Given a range of ints, print a list of all even numbers and their Goldbach composition.
 * Problem 42: (Doesn't exists?)
 * Problem 43: (Doesn't exists?)
 * Problem 44: (Doesn't exists?)
@@ -50,7 +50,7 @@ The 99 exercises from https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problem
 * Problem 47: (Solved with help) Truth tables for logical expression 2
 * Problem 48: (Solved) Truth tables for logical expressions (3).
 * Problem 49: (Solved with help) Problem with grey codes
-* Problem 50: (In progress)
+* Problem 50: (Solved with lot of pain :) ) Huffman codes
 * Problem 51
 * Problem 52
 * Problem 53
