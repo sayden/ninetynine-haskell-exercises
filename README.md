@@ -51,11 +51,11 @@ The 99 exercises from https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problem
 * Problem 48: (Solved) Truth tables for logical expressions (3).
 * Problem 49: (Solved with help) Problem with grey codes
 * Problem 50: (Solved with lot of pain :) ) Huffman codes
-* Problem 51
-* Problem 52
-* Problem 53
-* Problem 54
-* Problem 55
+* Problem 51: (Doesn't exists?)
+* Problem 52: (Doesn't exists?)
+* Problem 53: (Doesn't exists?)
+* Problem 54: (Redundant)
+* Problem 55: 
 * Problem 56
 * Problem 57
 * Problem 58

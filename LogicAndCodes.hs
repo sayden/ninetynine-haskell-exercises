@@ -65,7 +65,7 @@ gray n = ['0' : a | a <- prev] ++ ['1' : a | a <- prev]
 data Htree a = Leaf a | Branch (Htree a) (Htree a)
     deriving Show
 
-
+huffman :: (Num a, Ord a) => [(t, a)] -> [(t, String)]
 huffman list = serialize $ htree hTreeSorted
     where
         orSorted = sortBy (comparing snd) list
