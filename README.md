@@ -55,9 +55,9 @@ The 99 exercises from https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problem
 * Problem 52: (Doesn't exists?)
 * Problem 53: (Doesn't exists?)
 * Problem 54: (Redundant)
-* Problem 55: 
-* Problem 56
-* Problem 57
+* Problem 55: (Left for later)
+* Problem 56: (Solved) Symmetric binary trees
+* Problem 57: 
 * Problem 58
 * Problem 59
 * Problem 60
